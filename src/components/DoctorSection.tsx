@@ -31,10 +31,10 @@ export default function DoctorSection() {
   };
 
   return (
-    <section id={DOCTOR_SECTION_ID} className="section-padding scroll-mt-20 bg-cream">
+    <section id={DOCTOR_SECTION_ID} className="section-padding scroll-mt-20 overflow-x-clip bg-cream">
       <div className="container-main">
         <div className="grid items-center gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
-          <Reveal className="mx-auto w-full max-w-sm lg:max-w-none">
+          <Reveal className="reveal-slide-left mx-auto w-full max-w-sm lg:max-w-none">
             <div className="doctor-photo-wrap" onPointerMove={onMove} onPointerLeave={onLeave}>
               <div ref={photoRef} className="doctor-photo aspect-[6/7]">
                 <Image
@@ -45,7 +45,7 @@ export default function DoctorSection() {
                   quality={95}
                   className="object-cover object-[50%_22%]"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-ink/90 via-navy-ink/40 to-transparent p-6 pt-20">
+                <div className="doctor-name absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-ink/90 via-navy-ink/40 to-transparent p-6 pt-20">
                   <p className="font-display text-2xl text-white">{DOCTOR.name}</p>
                   <p className="text-sm text-gold-soft">{DOCTOR.title}</p>
                 </div>
