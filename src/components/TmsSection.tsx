@@ -81,7 +81,7 @@ export default function TmsSection() {
                   <span className="font-display text-lg italic text-gold-deep/70">0{i + 1}</span>
                 </div>
                 <h4 className="mt-6 text-xl font-semibold">{item.title}</h4>
-                <p className="mt-2 text-[0.95rem] leading-relaxed text-muted">{item.body}</p>
+                <p className="mt-2 leading-relaxed text-muted">{item.body}</p>
               </li>
             ))}
           </ul>

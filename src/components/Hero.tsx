@@ -48,7 +48,7 @@ export default function Hero() {
         <BrainNerves />
       </div>
 
-      <div className="container-main relative grid items-center gap-12 pb-20 pt-12 sm:pb-24 sm:pt-16 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10 lg:pb-28 lg:pt-20">
+      <div className="container-main relative grid items-center gap-12 pb-20 pt-12 sm:pb-24 sm:pt-16 lg:min-h-[clamp(700px,calc(100svh-148px),860px)] lg:grid-cols-[1.2fr_0.8fr] lg:gap-10 lg:pb-28 lg:pt-20">
         {/* Left: message */}
         <div>
           <div className="hero-fade flex flex-wrap items-center gap-x-4 gap-y-2" style={{ animationDelay: "0.05s" }}>

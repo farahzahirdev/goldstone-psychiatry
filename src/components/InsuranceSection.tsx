@@ -54,7 +54,7 @@ export default function InsuranceSection() {
                     {i + 1}
                   </span>
                   <div>
-                    <h3 className="text-2xl">{p.title}</h3>
+                    <h3 className="text-2xl font-semibold">{p.title}</h3>
                     <p className="mt-1.5 leading-relaxed text-muted">{p.body}</p>
                   </div>
                 </li>

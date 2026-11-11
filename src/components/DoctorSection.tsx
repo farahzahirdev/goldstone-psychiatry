@@ -70,7 +70,7 @@ export default function DoctorSection() {
                   <dt className="w-24 shrink-0 text-xs font-semibold uppercase tracking-[0.16em] text-gold-deep sm:w-28">
                     {c.label}
                   </dt>
-                  <dd className="text-[0.98rem] text-navy-ink">{c.value}</dd>
+                  <dd className="text-navy-ink">{c.value}</dd>
                 </div>
               ))}
             </dl>

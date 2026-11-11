@@ -70,7 +70,7 @@ export default function FinalCta() {
             <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
               Find out if TMS <span className="gold-italic">is right for you.</span>
             </h2>
-            <p className="mt-5 text-lg leading-relaxed text-white/70">
+            <p className="text-lead mt-5">
               Share a few details and our team will follow up about eligibility, insurance, and
               next steps. Please do not include medical details in the form.
             </p>

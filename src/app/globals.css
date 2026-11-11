@@ -113,6 +113,10 @@ li {
   color: var(--color-muted);
 }
 
+.on-dark .text-lead {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .gold-italic {
   font-style: italic;
   color: var(--color-gold-deep);
@@ -930,11 +934,6 @@ li {
   pointer-events: none;
 }
 
-.spot-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(220, 188, 127, 0.4);
-}
-
 .spot-card:hover::before {
   opacity: 1;
 }
@@ -947,8 +946,162 @@ li {
   transition: transform 0.5s var(--ease-out-expo);
 }
 
-.spot-card:hover .icon-badge {
-  transform: rotate(-6deg) scale(1.08);
+/* ---------- Why Goldstone card interactions ---------- */
+@property --trace {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+.why-grid {
+  perspective: 1100px;
+}
+
+.why-card {
+  transform-style: preserve-3d;
+  transition:
+    transform 0.6s var(--ease-out-expo),
+    border-color 0.4s ease,
+    box-shadow 0.6s ease;
+}
+
+/* 1. 3D tilt toward the cursor */
+.why-card:hover {
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(-4px);
+  transition:
+    transform 0.15s ease-out,
+    border-color 0.4s ease,
+    box-shadow 0.6s ease;
+  border-color: rgba(220, 188, 127, 0.35);
+  box-shadow:
+    0 40px 70px -35px rgba(0, 0, 0, 0.7),
+    0 0 50px -18px rgba(220, 188, 127, 0.45);
+}
+
+.why-card::before {
+  z-index: 1;
+}
+
+/* 2. Shared border glow: lights the edges of every card near the cursor */
+.why-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: radial-gradient(
+    320px circle at var(--mx, -999px) var(--my, -999px),
+    rgba(246, 220, 164, 1),
+    rgba(220, 188, 127, 0.35) 40%,
+    transparent 70%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.why-grid:hover .why-card::after {
+  opacity: 1;
+}
+
+/* 3. Icon tile fills with gold */
+.why-card .icon-badge {
+  transition:
+    transform 0.5s var(--ease-out-expo),
+    background 0.4s ease,
+    color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.why-card:hover .icon-badge {
+  color: var(--color-navy-ink);
+  background: linear-gradient(145deg, #ecd29d, #c49a54);
+  border-color: transparent;
+  box-shadow: 0 10px 24px -8px rgba(196, 154, 84, 0.65);
+  transform: translateZ(30px) rotate(-6deg) scale(1.06);
+}
+
+/* 4. Number index */
+.why-num {
+  color: rgba(220, 188, 127, 0.28);
+  transition:
+    color 0.4s ease,
+    transform 0.6s var(--ease-out-expo);
+}
+
+.why-card:hover .why-num {
+  color: var(--color-gold-soft);
+  transform: translateZ(20px);
+}
+
+.why-card:hover h3 {
+  transform: translateZ(18px);
+}
+
+.why-card h3 {
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+/* 5. Gold underline grows from the left */
+.why-underline {
+  position: absolute;
+  left: 1.75rem;
+  right: 1.75rem;
+  bottom: 0;
+  z-index: 2;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #c49a54, #f0dcae, transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.7s var(--ease-out-expo);
+}
+
+.why-card:hover .why-underline {
+  transform: scaleX(1);
+}
+
+/* 6. One-time gold border trace as cards scroll in (works on touch too) */
+.why-trace {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  padding: 1px;
+  background: conic-gradient(
+    from 210deg,
+    rgba(240, 210, 150, 0.9) var(--trace),
+    transparent var(--trace)
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.is-visible .why-trace {
+  animation: why-trace 1.8s var(--ease-out-expo) forwards;
+}
+
+.why-cell:nth-child(2) .why-trace { animation-delay: 0.15s; }
+.why-cell:nth-child(3) .why-trace { animation-delay: 0.3s; }
+.why-cell:nth-child(4) .why-trace { animation-delay: 0.45s; }
+.why-cell:nth-child(5) .why-trace { animation-delay: 0.6s; }
+.why-cell:nth-child(6) .why-trace { animation-delay: 0.75s; }
+
+@keyframes why-trace {
+  0% { --trace: 0%; opacity: 1; }
+  70% { --trace: 100%; opacity: 1; }
+  100% { --trace: 100%; opacity: 0; }
 }
 
 .dark-section {
@@ -1433,6 +1586,12 @@ li {
   .curve-draw {
     animation: none !important;
     clip-path: none !important;
+  }
+  .why-card:hover {
+    transform: none !important;
+  }
+  .why-trace {
+    animation: none !important;
   }
   .nerve-spark,
   .nerve-node,
