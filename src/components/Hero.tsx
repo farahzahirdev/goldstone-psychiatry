@@ -59,10 +59,12 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="mt-6 text-[2.35rem] font-semibold leading-[1.08] sm:text-5xl xl:text-[3.3rem]">
-            <span className="block">{words(LINE_1)}</span>
-            <span className="block">{words(LINE_2)}</span>
-            <span className="block">{words(LINE_3, true)}</span>
+          {/* Phones: lines 1-2 flow as one sentence (fixed breaks made a narrow
+              2-words-per-line column). sm+: the designed three-line layout. */}
+          <h1 className="mt-6 text-[2.1rem] font-semibold leading-[1.1] sm:text-5xl sm:leading-[1.08] xl:text-[3.3rem]">
+            <span className="sm:block">{words(LINE_1)}</span>
+            <span className="sm:block">{words(LINE_2)}</span>
+            <span className="mt-1 block sm:mt-0">{words(LINE_3, true)}</span>
           </h1>
 
           <p
