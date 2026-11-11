@@ -101,7 +101,7 @@ export default function Hero() {
                   ))}
                 </span>
                 <p className="text-[0.95rem] text-white/70">
-                  <strong className="font-semibold text-white">Excellent</strong> · 16 Google reviews
+                  <strong className="font-semibold text-white">Excellent</strong> · Google reviews
                 </p>
               </div>
 

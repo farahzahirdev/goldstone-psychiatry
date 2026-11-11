@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
-import CountUp from "@/components/CountUp";
 import { ArrowIcon, StarIcon } from "@/components/Icons";
 import { FORM_SECTION_ID, GOOGLE_REVIEWS_URL, IMAGES, REVIEWS_SECTION_ID } from "@/lib/constants";
 
@@ -102,7 +101,7 @@ export default function Reviews() {
             <p className="mt-6 text-white/75">
               Based on{" "}
               <strong className="font-semibold text-white">
-                <CountUp to={16} /> Google reviews
+                Google reviews
               </strong>
             </p>
 
