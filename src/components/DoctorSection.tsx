@@ -54,15 +54,17 @@ export default function DoctorSection() {
           </Reveal>
 
           <Reveal delay={2}>
-            <p className="section-label">Meet your physician</p>
-            <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
-              Care led by <span className="gold-italic">{DOCTOR.name}</span>
-            </h2>
-            <p className="text-lead mt-6">{DOCTOR.approach}</p>
-            <p className="text-lead mt-4">
-              As Founder and Clinical Director, Dr. Anugwom personally guides TMS care at Goldstone, from your
-              first evaluation through every protocol adjustment.
-            </p>
+            <div className="text-center lg:text-left">
+              <p className="section-label">Meet your physician</p>
+              <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
+                Care led by <span className="gold-italic">{DOCTOR.name}</span>
+              </h2>
+              <p className="text-lead mt-6">{DOCTOR.approach}</p>
+              <p className="text-lead mt-4">
+                As Founder and Clinical Director, Dr. Anugwom personally guides TMS care at Goldstone, from your
+                first evaluation through every protocol adjustment.
+              </p>
+            </div>
 
             <dl className="stagger mt-8">
               {CREDENTIALS.map((c) => (

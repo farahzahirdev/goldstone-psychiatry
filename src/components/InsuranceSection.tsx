@@ -14,15 +14,17 @@ export default function InsuranceSection() {
       <div className="container-main">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.05fr] lg:gap-16">
           <Reveal>
-            <p className="section-label">Insurance &amp; coverage</p>
-            <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
-              Most plans and Medicare <span className="gold-italic">cover TMS.</span>
-            </h2>
-            <p className="text-lead mt-6">
-              Most commercial insurance plans and Medicare cover standard TMS for qualifying
-              patients with major depressive disorder. Prior authorization is usually required,
-              and we take care of it for you.
-            </p>
+            <div className="text-center lg:text-left">
+              <p className="section-label">Insurance &amp; coverage</p>
+              <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
+                Most plans and Medicare <span className="gold-italic">cover TMS.</span>
+              </h2>
+              <p className="text-lead mt-6">
+                Most commercial insurance plans and Medicare cover standard TMS for qualifying
+                patients with major depressive disorder. Prior authorization is usually required,
+                and we take care of it for you.
+              </p>
+            </div>
 
             <div className="mt-8 rounded-2xl border border-line bg-white p-5 sm:p-6">
               <p className="text-[0.95rem] font-semibold uppercase tracking-[0.14em] text-navy">

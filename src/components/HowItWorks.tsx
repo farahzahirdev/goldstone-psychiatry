@@ -51,14 +51,16 @@ export default function HowItWorks() {
       <div className="container-main grid items-start gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:gap-20">
         <div>
           <Reveal>
-            <p className="section-label">How it works</p>
-            <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
-              From first call to first session, <span className="gold-italic">in four steps.</span>
-            </h2>
-            <p className="text-lead mt-5 max-w-lg">
-              We keep the process simple and handle the paperwork, so you can focus on feeling
-              better.
-            </p>
+            <div className="text-center lg:text-left">
+              <p className="section-label">How it works</p>
+              <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
+                From first call to first session, <span className="gold-italic">in four steps.</span>
+              </h2>
+              <p className="text-lead mx-auto mt-5 max-w-lg lg:mx-0">
+                We keep the process simple and handle the paperwork, so you can focus on feeling
+                better.
+              </p>
+            </div>
           </Reveal>
 
           <ol ref={listRef} className="relative mt-12 space-y-5">

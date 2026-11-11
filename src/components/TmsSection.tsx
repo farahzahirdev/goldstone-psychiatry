@@ -23,21 +23,23 @@ export default function TmsSection() {
       <div className="container-main">
         <div className="grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
           <Reveal>
-            <p className="section-label">What is TMS</p>
-            <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
-              Targeted brain stimulation, <span className="gold-italic">without the pills.</span>
-            </h2>
-            <p className="text-lead mt-6">
-              Transcranial Magnetic Stimulation (TMS) uses focused magnetic pulses to gently
-              activate the areas of the brain that regulate mood. These circuits are often
-              underactive in depression. You stay awake and comfortable, then get on with your day.
-            </p>
-            <p className="text-lead mt-4">
-              Every protocol at Goldstone is designed and adjusted by your physician, and delivered
-              with {DEVICE_NAME} technology.
-            </p>
+            <div className="text-center lg:text-left">
+              <p className="section-label">What is TMS</p>
+              <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
+                Targeted brain stimulation, <span className="gold-italic">without the pills.</span>
+              </h2>
+              <p className="text-lead mt-6">
+                Transcranial Magnetic Stimulation (TMS) uses focused magnetic pulses to gently
+                activate the areas of the brain that regulate mood. These circuits are often
+                underactive in depression. You stay awake and comfortable, then get on with your day.
+              </p>
+              <p className="text-lead mt-4">
+                Every protocol at Goldstone is designed and adjusted by your physician, and delivered
+                with {DEVICE_NAME} technology.
+              </p>
+            </div>
 
-            <ul className="stagger mt-8 flex flex-wrap gap-2.5">
+            <ul className="stagger mt-8 flex flex-wrap justify-center gap-2.5 lg:justify-start">
               {NO_LIST.map((item) => (
                 <li key={item} className="good-pill">
                   <span className="check-dot h-5 w-5">
@@ -55,7 +57,7 @@ export default function TmsSection() {
         </div>
 
         <Reveal className="mt-24 sm:mt-28">
-          <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+          <div className="flex flex-col items-center justify-between gap-6 text-center sm:flex-row sm:items-end sm:text-left">
             <div className="max-w-xl">
               <p className="section-label">Who it helps</p>
               <h3 className="mt-3 text-3xl font-semibold sm:text-4xl">

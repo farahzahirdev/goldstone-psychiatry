@@ -67,14 +67,16 @@ export default function FinalCta() {
       <div className="container-main">
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <Reveal className="lg:sticky lg:top-28 lg:self-start">
-            <p className="section-label">Take the first step</p>
-            <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
-              Find out if TMS <span className="gold-italic">is right for you.</span>
-            </h2>
-            <p className="text-lead mt-5">
-              Share a few details and our team will follow up about eligibility, insurance, and
-              next steps. Please do not include medical details in the form.
-            </p>
+            <div className="text-center lg:text-left">
+              <p className="section-label">Take the first step</p>
+              <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
+                Find out if TMS <span className="gold-italic">is right for you.</span>
+              </h2>
+              <p className="text-lead mt-5">
+                Share a few details and our team will follow up about eligibility, insurance, and
+                next steps. Please do not include medical details in the form.
+              </p>
+            </div>
 
             <ul className="mt-7 space-y-3">
               {PROMISES.map((p) => (

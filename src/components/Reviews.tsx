@@ -32,14 +32,16 @@ export default function Reviews() {
     <section id={REVIEWS_SECTION_ID} className="section-padding scroll-mt-20">
       <div className="container-main grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
         <Reveal>
-          <p className="section-label">Patient reviews</p>
-          <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
-            Houston patients rate us <span className="gold-italic">Excellent.</span>
-          </h2>
-          <p className="text-lead mt-5 max-w-lg">
-            A small, physician-led practice means care that feels personal from the very first
-            call.
-          </p>
+          <div className="text-center lg:text-left">
+            <p className="section-label">Patient reviews</p>
+            <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
+              Houston patients rate us <span className="gold-italic">Excellent.</span>
+            </h2>
+            <p className="text-lead mx-auto mt-5 max-w-lg lg:mx-0">
+              A small, physician-led practice means care that feels personal from the very first
+              call.
+            </p>
+          </div>
 
           <ul className="stagger mt-8">
             {VALUES.map((v) => (

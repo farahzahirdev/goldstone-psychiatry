@@ -12,17 +12,19 @@ export default function Faq() {
     <section id={FAQ_SECTION_ID} className="section-padding scroll-mt-20 bg-cream">
       <div className="container-main grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
         <Reveal className="lg:sticky lg:top-28 lg:self-start">
-          <p className="section-label">Questions</p>
-          <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
-            Good to know <span className="gold-italic">before you start.</span>
-          </h2>
-          <p className="text-lead mt-5">
-            Still have questions? Call{" "}
-            <a href={PHONE_HREF} className="font-semibold text-navy underline decoration-gold underline-offset-4 hover:text-gold-deep">
-              {PHONE_DISPLAY}
-            </a>
-            . We reply within one business day.
-          </p>
+          <div className="text-center lg:text-left">
+            <p className="section-label">Questions</p>
+            <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
+              Good to know <span className="gold-italic">before you start.</span>
+            </h2>
+            <p className="text-lead mt-5">
+              Still have questions? Call{" "}
+              <a href={PHONE_HREF} className="font-semibold text-navy underline decoration-gold underline-offset-4 hover:text-gold-deep">
+                {PHONE_DISPLAY}
+              </a>
+              . We reply within one business day.
+            </p>
+          </div>
 
           <div className="faq-contact mt-8 p-7">
             <p className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-gold-soft">
