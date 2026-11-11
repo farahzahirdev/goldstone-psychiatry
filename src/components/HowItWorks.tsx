@@ -73,7 +73,7 @@ export default function HowItWorks() {
               >
                 <span className="step-num shrink-0">{i + 1}</span>
                 <div className="step-card">
-                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-gold-deep">
+                  <p className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-gold-deep">
                     Step {i + 1}
                   </p>
                   <h3 className="mt-1.5 text-2xl font-semibold">{step.title}</h3>
@@ -103,11 +103,12 @@ export default function HowItWorks() {
                 alt="Illustration of the brain highlighting mood-regulating pathways"
                 fill
                 sizes="(min-width: 1024px) 480px, 90vw"
+                quality={90}
                 className="object-cover"
               />
             </div>
             <div className="steps-caption">
-              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-gold-soft">
+              <p className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-gold-soft">
                 What TMS targets
               </p>
               <p className="mt-1 font-display text-lg font-semibold leading-snug text-white sm:text-xl">

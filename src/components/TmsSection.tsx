@@ -85,7 +85,7 @@ export default function TmsSection() {
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-sm text-muted">
+          <p className="mt-6 text-[0.95rem] text-muted">
             Adults 18+. Treatment is in person at our Houston office. A physician evaluation
             confirms whether TMS is a safe and appropriate fit for you.
           </p>
@@ -104,6 +104,7 @@ function SessionPhoto() {
           alt="Smiling patient seated in a TMS treatment chair talking with her clinician"
           fill
           sizes="(min-width: 1024px) 600px, 95vw"
+          quality={95}
           className="object-cover object-[42%_35%]"
         />
       </div>
@@ -114,13 +115,13 @@ function SessionPhoto() {
       </span>
 
       <div className="tms-course-card">
-        <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-gold-soft">
+        <p className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-gold-soft">
           A typical TMS course
         </p>
         <p className="mt-1.5 font-display text-2xl font-semibold leading-tight text-white">
           5 days a week, <span className="italic text-gold-soft">about 6 weeks</span>
         </p>
-        <p className="mt-2 flex items-center gap-2 text-sm text-white/70">
+        <p className="mt-2 flex items-center gap-2 text-[0.95rem] text-white/70">
           <CarIcon className="h-4 w-4 text-gold-soft" />
           Awake, comfortable, drive yourself home
         </p>

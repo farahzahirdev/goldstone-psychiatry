@@ -34,8 +34,8 @@ export default function WhyGoldstone() {
       <GoldRings corner="bottom-left" />
 
       <div className="container-main">
-        <Reveal className="mx-auto max-w-3xl text-center">
-          <p className="section-label justify-center">Why Goldstone</p>
+        <Reveal className="max-w-3xl lg:mx-auto lg:text-center">
+          <p className="section-label lg:justify-center">Why Goldstone</p>
           <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">
             The physician-led difference. <span className="gold-italic">Not a TMS mill.</span>
           </h2>

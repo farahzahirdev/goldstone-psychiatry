@@ -47,7 +47,7 @@ export default function DoctorSection() {
                 />
                 <div className="doctor-name absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-ink/90 via-navy-ink/40 to-transparent p-6 pt-20">
                   <p className="font-display text-2xl text-white">{DOCTOR.name}</p>
-                  <p className="text-sm text-gold-soft">{DOCTOR.title}</p>
+                  <p className="text-[0.95rem] text-gold-soft">{DOCTOR.title}</p>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function DoctorSection() {
             <dl className="stagger mt-8">
               {CREDENTIALS.map((c) => (
                 <div key={c.label} className="cred-row">
-                  <dt className="w-24 shrink-0 text-xs font-semibold uppercase tracking-[0.16em] text-gold-deep sm:w-28">
+                  <dt className="w-24 shrink-0 text-[0.8rem] font-semibold uppercase tracking-[0.16em] text-gold-deep sm:w-28">
                     {c.label}
                   </dt>
                   <dd className="text-navy-ink">{c.value}</dd>

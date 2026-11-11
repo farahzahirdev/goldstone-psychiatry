@@ -112,7 +112,7 @@ li {
 }
 
 .section-label {
-  @apply inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.22em] text-gold-deep;
+  @apply inline-flex items-center gap-2.5 text-[0.88rem] font-semibold uppercase tracking-[0.2em] text-gold-deep;
 }
 
 .section-label::before {
@@ -147,7 +147,7 @@ li {
 
 /* ---------- Buttons ---------- */
 .btn {
-  @apply relative inline-flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap rounded-full px-6 py-3.5 text-sm font-semibold;
+  @apply relative inline-flex items-center justify-center gap-2 overflow-hidden whitespace-nowrap rounded-full px-6 py-3.5 text-[0.95rem] font-semibold;
   letter-spacing: 0.01em;
   line-height: 1.1;
   transition:
@@ -230,7 +230,7 @@ li {
 }
 
 .btn-sm {
-  @apply px-4 py-2.5 text-[0.8rem];
+  @apply px-4 py-2.5 text-[0.9rem];
 }
 
 .btn .btn-arrow {
@@ -369,7 +369,7 @@ li {
 .mobile-nav-panel > *:nth-child(n + 8) { animation-delay: 0.28s; }
 
 .mobile-nav-label {
-  @apply px-3 pb-1 pt-1 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-gold-deep;
+  @apply px-3 pb-1 pt-1 text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-gold-deep;
 }
 
 .mobile-nav-link {
@@ -752,7 +752,7 @@ li {
 
 /* Hero tags + eligibility card */
 .hero-tag {
-  @apply inline-flex items-center rounded-full border px-4 py-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.2em];
+  @apply inline-flex items-center rounded-full border px-4 py-1.5 text-[0.8rem] font-semibold uppercase tracking-[0.2em];
   border-color: rgba(220, 188, 127, 0.5);
   color: var(--color-gold-soft);
   background: rgba(220, 188, 127, 0.06);
@@ -824,7 +824,7 @@ li {
 }
 
 .elig-list > li {
-  @apply flex gap-3 text-[0.93rem] leading-snug;
+  @apply flex gap-3 text-[0.98rem] leading-snug;
   opacity: 0;
   animation: fade-up 0.8s var(--ease-out-expo) forwards;
 }
@@ -1187,7 +1187,7 @@ li {
 }
 
 .tms-chip {
-  @apply absolute left-3 top-4 inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-semibold text-navy-ink sm:left-8;
+  @apply absolute left-3 top-4 inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-sm font-semibold text-navy-ink sm:left-8;
   background: rgba(255, 253, 247, 0.92);
   border: 1px solid rgba(196, 154, 84, 0.45);
   backdrop-filter: blur(8px);
@@ -1225,7 +1225,7 @@ li {
 }
 
 .good-pill {
-  @apply inline-flex items-center gap-2 rounded-full border bg-white px-4 py-2 text-sm font-medium text-navy-ink;
+  @apply inline-flex items-center gap-2 rounded-full border bg-white px-4 py-2 text-[0.95rem] font-medium text-navy-ink;
   border-color: rgba(196, 154, 84, 0.35);
   transition:
     transform 0.4s var(--ease-out-expo),
@@ -1379,7 +1379,7 @@ li {
 
 /* ---------- Insurance ---------- */
 .carrier-chip {
-  @apply inline-flex items-center gap-2 whitespace-nowrap rounded-full border bg-white px-5 py-2.5 text-sm font-medium text-navy;
+  @apply inline-flex items-center gap-2 whitespace-nowrap rounded-full border bg-white px-5 py-2.5 text-[0.95rem] font-medium text-navy;
   border-color: var(--color-line);
 }
 

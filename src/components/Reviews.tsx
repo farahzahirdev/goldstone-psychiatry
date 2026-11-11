@@ -80,7 +80,7 @@ export default function Reviews() {
             <span className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-white shadow-[0_12px_30px_-10px_rgba(0,0,0,0.45)]">
               <GoogleMark />
             </span>
-            <p className="mt-5 text-xs font-semibold uppercase tracking-[0.24em] text-gold-soft">
+            <p className="mt-5 text-[0.8rem] font-semibold uppercase tracking-[0.24em] text-gold-soft">
               Google rating
             </p>
 

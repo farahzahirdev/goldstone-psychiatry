@@ -25,7 +25,7 @@ export default function Faq() {
           </p>
 
           <div className="faq-contact mt-8 p-7">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">
+            <p className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-gold-soft">
               Talk to our team
             </p>
             <p className="mt-3 font-display text-2xl font-semibold leading-snug text-white">

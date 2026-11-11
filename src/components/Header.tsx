@@ -78,7 +78,7 @@ export default function Header() {
   useEffect(() => {
     measureHeader();
     const onResize = () => {
-      if (window.innerWidth >= 1100) setOpen(false);
+      if (window.innerWidth >= 1280) setOpen(false);
       measureHeader();
     };
     window.addEventListener("resize", onResize);
@@ -212,7 +212,7 @@ export default function Header() {
         ref={headerRef}
         className={`site-header${solid ? " is-solid" : ""}${open ? " is-menu-open" : ""}`}
       >
-        <div className="container-main flex items-center justify-between gap-4 py-3">
+        <div className="container-main flex items-center justify-between gap-4 py-3 min-[1440px]:max-w-[1360px]">
           <a
             href="#top"
             className="group relative z-[80] flex shrink-0 items-center gap-2.5"
@@ -227,7 +227,7 @@ export default function Header() {
           </a>
 
           <nav
-            className="hidden items-center gap-5 whitespace-nowrap text-[0.82rem] font-medium min-[1100px]:flex xl:gap-7"
+            className="hidden items-center gap-5 whitespace-nowrap text-[0.93rem] font-medium min-[1280px]:flex min-[1440px]:gap-6"
             aria-label="Main"
           >
             {NAV_ITEMS.map((item) => (
@@ -241,10 +241,10 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="hidden shrink-0 items-center gap-2 min-[1100px]:flex">
-            <a href={PHONE_HREF} className="btn btn-outline btn-sm">
+          <div className="hidden shrink-0 items-center gap-2 min-[1280px]:flex">
+            <a href={PHONE_HREF} className="btn btn-outline btn-sm" aria-label={`Call ${PHONE_DISPLAY}`}>
               <PhoneIcon className="h-3.5 w-3.5" />
-              {PHONE_DISPLAY}
+              <span className="hidden min-[1440px]:inline">{PHONE_DISPLAY}</span>
             </a>
             <a href={`#${FORM_SECTION_ID}`} className="btn btn-gold btn-sm">
               Find Out If You Qualify
@@ -254,7 +254,7 @@ export default function Header() {
           <button
             ref={toggleRef}
             type="button"
-            className="mobile-nav-toggle relative inline-flex z-[80] min-[1100px]:hidden"
+            className="mobile-nav-toggle relative inline-flex z-[80] min-[1280px]:hidden"
             onClick={() => {
               pendingHash.current = null;
               setOpen((prev) => !prev);

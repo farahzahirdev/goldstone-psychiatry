@@ -1,14 +1,13 @@
 export const SITE_NAME = "Goldstone Psychiatry & Neuromodulation Center";
 export const SITE_SHORT = "Goldstone Psychiatry";
 
-export const LOGO_MARK_URL = "/images/gp-mark.svg";
 
 export const IMAGES = {
-  doctor: "/images/team/dr-anugwom-hd.jpg",
-  brain: "/images/hero-brain-gemini.png",
-  tmsSession: "/images/tms-session.jpg",
-  brainSteps: "/images/brain-steps.jpg",
-  reviewsBg: "/images/reviews-brain.jpg",
+  doctor: "/images/team/dr-anugwom.webp",
+  brain: "/images/hero-brain.webp",
+  tmsSession: "/images/tms-session.webp",
+  brainSteps: "/images/brain-steps.webp",
+  reviewsBg: "/images/reviews-brain.webp",
   og: "/images/og-image.png",
 } as const;
 

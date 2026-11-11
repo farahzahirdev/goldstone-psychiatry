@@ -25,7 +25,7 @@ export default function InsuranceSection() {
             </p>
 
             <div className="mt-8 rounded-2xl border border-line bg-white p-5 sm:p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.14em] text-navy">
+              <p className="text-[0.95rem] font-semibold uppercase tracking-[0.14em] text-navy">
                 Plans we work with
               </p>
               <ul className="mt-4 flex flex-wrap gap-2">
@@ -36,7 +36,7 @@ export default function InsuranceSection() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm text-muted">
+              <p className="mt-4 text-[0.95rem] text-muted">
                 Do not see your plan? We are actively credentialing.{" "}
                 <a href={PHONE_HREF} className="font-semibold text-navy underline decoration-gold underline-offset-4 hover:text-gold-deep">
                   Call {PHONE_DISPLAY}
@@ -49,11 +49,11 @@ export default function InsuranceSection() {
           <Reveal delay={2}>
             <ol className="stagger relative space-y-4">
               {INSURANCE_POINTS.map((p, i) => (
-                <li key={p.title} className="card card-hover flex gap-5 p-6 sm:p-7">
-                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-navy font-display text-lg text-gold-soft">
+                <li key={p.title} className="card card-hover p-6 sm:p-7">
+                  <span className="grid h-11 w-11 place-items-center rounded-full bg-navy font-display text-lg text-gold-soft">
                     {i + 1}
                   </span>
-                  <div>
+                  <div className="mt-4">
                     <h3 className="text-2xl font-semibold">{p.title}</h3>
                     <p className="mt-1.5 leading-relaxed text-muted">{p.body}</p>
                   </div>
@@ -62,7 +62,7 @@ export default function InsuranceSection() {
               <li className="flex items-center gap-4 rounded-2xl bg-navy p-6 text-white sm:p-7">
                 <div className="flex-1">
                   <p className="font-display text-2xl text-white">Questions about cost?</p>
-                  <p className="mt-1 text-sm text-white/70">
+                  <p className="mt-1 text-[0.95rem] text-white/70">
                     Our team will walk you through coverage before your first visit.
                   </p>
                 </div>

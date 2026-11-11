@@ -21,15 +21,15 @@ export default function Footer() {
         <div className="grid gap-10 border-b border-white/10 pb-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <Logo tone="light" size="lg" />
-            <p className="mt-5 max-w-sm text-sm leading-relaxed">
+            <p className="mt-5 max-w-sm text-[0.95rem] leading-relaxed">
               Physician-led psychiatry and TMS therapy for adults in Greater Houston. Accepting new
               patients.
             </p>
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-soft">Contact</p>
-            <ul className="mt-4 space-y-3 text-sm">
+            <p className="text-[0.8rem] font-semibold uppercase tracking-[0.18em] text-gold-soft">Contact</p>
+            <ul className="mt-4 space-y-3 text-[0.95rem]">
               <li>
                 <a href={PHONE_HREF} className="inline-flex items-center gap-2.5 transition-colors hover:text-white">
                   <PhoneIcon /> {PHONE_DISPLAY}
@@ -44,12 +44,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-soft">Office</p>
+            <p className="text-[0.8rem] font-semibold uppercase tracking-[0.18em] text-gold-soft">Office</p>
             <a
               href={MAPS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 flex gap-2.5 text-sm transition-colors hover:text-white"
+              className="mt-4 flex gap-2.5 text-[0.95rem] transition-colors hover:text-white"
             >
               <PinIcon className="mt-0.5 h-4 w-4 shrink-0" />
               <span>
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="space-y-3 pt-8 text-xs leading-relaxed text-white/50">
+        <div className="space-y-3 pt-8 text-sm leading-relaxed text-white/50">
           <p>
             <strong className="text-white/80">Emergency notice:</strong> If you are in crisis, call or
             text 988 or call 911. Goldstone Psychiatry does not provide emergency care.

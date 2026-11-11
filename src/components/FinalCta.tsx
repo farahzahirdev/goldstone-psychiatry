@@ -94,7 +94,7 @@ export default function FinalCta() {
                 <PhoneIcon className="h-5 w-5" />
               </span>
               <span>
-                <span className="block text-xs uppercase tracking-[0.16em] text-white/55">
+                <span className="block text-[0.8rem] uppercase tracking-[0.16em] text-white/55">
                   Prefer to talk? Call us
                 </span>
                 <span className="font-display text-2xl text-white">{PHONE_DISPLAY}</span>
@@ -105,12 +105,12 @@ export default function FinalCta() {
               href={MAPS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 block text-sm text-white/60 transition-colors hover:text-gold-soft"
+              className="mt-4 block text-[0.95rem] text-white/60 transition-colors hover:text-gold-soft"
             >
               {ADDRESS_LINE_1}, {ADDRESS_LINE_2}
             </a>
 
-            <div className="mt-8 flex gap-3 rounded-2xl border border-red-300/30 bg-red-500/10 p-5 text-sm leading-relaxed text-white/85" role="note">
+            <div className="mt-8 flex gap-3 rounded-2xl border border-red-300/30 bg-red-500/10 p-5 text-[0.95rem] leading-relaxed text-white/85" role="note">
               <AlertIcon className="mt-0.5 h-5 w-5 shrink-0 text-red-200" />
               <p>
                 <strong className="text-white">In a crisis?</strong> Call or text{" "}

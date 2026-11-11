@@ -44,7 +44,7 @@ export default function Hero() {
 
       {/* Glowing brain, anchored to the far right edge (desktop) */}
       <div className="hero-brain" aria-hidden>
-        <Image src={IMAGES.brain} alt="" fill priority sizes="(min-width: 1024px) 45vw, 90vw" className="object-cover object-left" />
+        <Image src={IMAGES.brain} alt="" fill priority quality={90} sizes="(min-width: 1024px) 45vw, 90vw" className="object-cover object-left" />
         <BrainNerves />
       </div>
 
@@ -53,7 +53,7 @@ export default function Hero() {
         <div className="text-center lg:text-left">
           <div className="hero-fade flex flex-wrap items-center justify-center gap-x-4 gap-y-2 lg:justify-start" style={{ animationDelay: "0.05s" }}>
             <span className="hero-tag">TMS Therapy · Houston, TX</span>
-            <span className="inline-flex items-center gap-2 text-sm text-white/75">
+            <span className="inline-flex items-center gap-2 text-[0.95rem] text-white/75">
               <span className="live-dot" aria-hidden />
               Accepting new patients
             </span>
@@ -98,7 +98,7 @@ export default function Hero() {
                     <StarIcon key={i} className="h-4 w-4" />
                   ))}
                 </span>
-                <p className="text-sm text-white/70">
+                <p className="text-[0.95rem] text-white/70">
                   <strong className="font-semibold text-white">Excellent</strong> · 16 Google reviews
                 </p>
               </div>
@@ -113,7 +113,7 @@ export default function Hero() {
                     <span className="block whitespace-nowrap font-display text-[1.35rem] font-semibold leading-none text-gold-soft sm:text-3xl">
                       <CountUp to={s.value} prefix={"prefix" in s ? s.prefix : ""} suffix={s.suffix} />
                     </span>
-                    <span className="mt-1.5 block text-xs text-white/60">{s.label}</span>
+                    <span className="mt-1.5 block text-sm text-white/60">{s.label}</span>
                   </dd>
                 </div>
               ))}
@@ -124,11 +124,11 @@ export default function Hero() {
         {/* Right: TMS inquiry card (frosted glass over the brain image) */}
         <div className="relative lg:pl-6">
           <div className="hero-fade elig-card mx-auto max-w-md p-7 sm:p-9" style={{ animationDelay: "0.55s" }}>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">TMS inquiry</p>
+            <p className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-gold-deep">TMS inquiry</p>
             <h2 className="mt-3 text-[1.8rem] font-semibold leading-tight sm:text-3xl">
               See if TMS is right for you
             </h2>
-            <p className="mt-2.5 text-[0.93rem] leading-relaxed text-muted">
+            <p className="mt-2.5 text-[0.98rem] leading-relaxed text-muted">
               Takes about a minute. No medical details needed. We reply within one business day.
             </p>
 
@@ -140,7 +140,7 @@ export default function Hero() {
                   </span>
                   <span>
                     <span className="block font-semibold text-navy-ink">{p.title}</span>
-                    <span className="block text-[0.85rem] text-muted">{p.body}</span>
+                    <span className="block text-[0.92rem] text-muted">{p.body}</span>
                   </span>
                 </li>
               ))}
@@ -150,7 +150,7 @@ export default function Hero() {
               Check my eligibility
               <ArrowIcon />
             </a>
-            <p className="mt-4 text-center text-sm text-muted">
+            <p className="mt-4 text-center text-[0.95rem] text-muted">
               or call{" "}
               <a href={PHONE_HREF} className="font-semibold text-navy-ink hover:text-gold-deep">
                 {PHONE_DISPLAY}
