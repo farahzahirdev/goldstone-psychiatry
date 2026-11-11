@@ -51,8 +51,27 @@ h4,
   font-family: var(--font-display);
   font-weight: 500;
   letter-spacing: -0.015em;
-  text-wrap: balance;
+  /* "pretty" fills lines normally (no lone last word); "balance" would shorten every
+     line and leave a gap on the right of left-aligned headings on mobile */
+  text-wrap: pretty;
   color: var(--color-navy-ink);
+}
+
+/* Centred headings still look best balanced */
+.text-center h1,
+.text-center h2,
+.text-center h3,
+h1.text-center,
+h2.text-center,
+h3.text-center {
+  text-wrap: balance;
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-left h1,
+  .lg\:text-left h2 {
+    text-wrap: pretty;
+  }
 }
 
 h1 {
@@ -858,6 +877,19 @@ li {
   padding-left: 0.85rem;
   margin-left: 0;
   border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* centred stats on mobile/tablet: equal padding so each column centres cleanly */
+@media (max-width: 1023px) {
+  .hero-stats > * {
+    padding-inline: 0.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-stats > * + * {
+    padding-left: 1.5rem;
+  }
 }
 
 .stat-divider > * + * {

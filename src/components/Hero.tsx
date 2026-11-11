@@ -49,9 +49,9 @@ export default function Hero() {
       </div>
 
       <div className="container-main relative grid items-center gap-12 pb-20 pt-12 sm:pb-24 sm:pt-16 lg:min-h-[clamp(700px,calc(100svh-148px),860px)] lg:grid-cols-[1.2fr_0.8fr] lg:gap-10 lg:pb-28 lg:pt-20">
-        {/* Left: message */}
-        <div>
-          <div className="hero-fade flex flex-wrap items-center gap-x-4 gap-y-2" style={{ animationDelay: "0.05s" }}>
+        {/* Left: message (centred on mobile/tablet, left-aligned on desktop) */}
+        <div className="text-center lg:text-left">
+          <div className="hero-fade flex flex-wrap items-center justify-center gap-x-4 gap-y-2 lg:justify-start" style={{ animationDelay: "0.05s" }}>
             <span className="hero-tag">TMS Therapy · Houston, TX</span>
             <span className="inline-flex items-center gap-2 text-sm text-white/75">
               <span className="live-dot" aria-hidden />
@@ -66,7 +66,7 @@ export default function Hero() {
           </h1>
 
           <p
-            className="hero-fade mt-6 max-w-xl text-[1.08rem] leading-relaxed text-white/75"
+            className="hero-fade mx-auto mt-6 max-w-xl text-[1.08rem] leading-relaxed text-white/75 lg:mx-0"
             style={{ animationDelay: "0.8s" }}
           >
             Physician-led, personalized TMS therapy for treatment-resistant depression. No
@@ -74,7 +74,7 @@ export default function Hero() {
           </p>
 
           <div
-            className="hero-fade mt-8 flex flex-col gap-3 sm:flex-row"
+            className="hero-fade mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start"
             style={{ animationDelay: "0.95s" }}
           >
             <a href={`#${FORM_SECTION_ID}`} className="btn btn-gold w-full px-7 py-4 text-[0.95rem] sm:w-auto">
@@ -91,8 +91,8 @@ export default function Hero() {
             className="hero-fade mt-10 border-t border-white/12 pt-7"
             style={{ animationDelay: "1.1s" }}
           >
-            <div className="flex flex-wrap items-center gap-x-10 gap-y-5">
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-5 lg:justify-start">
+              <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 lg:justify-start">
                 <span className="flex gap-0.5 text-gold">
                   {[0, 1, 2, 3, 4].map((i) => (
                     <StarIcon key={i} className="h-4 w-4" />
@@ -105,9 +105,9 @@ export default function Hero() {
 
             </div>
 
-            <dl className="hero-stats mt-7 grid max-w-xl grid-cols-3">
+            <dl className="hero-stats mx-auto mt-7 grid max-w-xl grid-cols-3 lg:mx-0">
               {STATS.map((s) => (
-                <div key={s.label} className="pr-3 sm:pr-6">
+                <div key={s.label} className="lg:pr-6">
                   <dt className="sr-only">{s.label}</dt>
                   <dd>
                     <span className="block whitespace-nowrap font-display text-[1.35rem] font-semibold leading-none text-gold-soft sm:text-3xl">
