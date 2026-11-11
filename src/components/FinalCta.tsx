@@ -7,6 +7,7 @@ import { AlertIcon, CheckIcon, PhoneIcon } from "@/components/Icons";
 import {
   ADDRESS_LINE_1,
   ADDRESS_LINE_2,
+  SERVICE_AREA,
   FORM_HEIGHT,
   FORM_ID,
   FORM_IFRAME_ID,
@@ -109,6 +110,7 @@ export default function FinalCta() {
             >
               {ADDRESS_LINE_1}, {ADDRESS_LINE_2}
             </a>
+            <p className="mt-2 text-[0.95rem] leading-relaxed text-white/60">{SERVICE_AREA}</p>
 
             <div className="mt-8 flex gap-3 rounded-2xl border border-red-300/30 bg-red-500/10 p-5 text-[0.95rem] leading-relaxed text-white/85" role="note">
               <AlertIcon className="mt-0.5 h-5 w-5 shrink-0 text-red-200" />

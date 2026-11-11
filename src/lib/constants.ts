@@ -56,20 +56,9 @@ export const DOCTOR = {
     "Dr. Anugwom blends comprehensive outpatient psychiatry with advanced interventional expertise. The approach emphasizes diagnostic precision, individualized treatment planning, and a measured, evidence-based path through complex and treatment-resistant conditions.",
 } as const;
 
-export const NEIGHBORHOODS = [
-  "River Oaks",
-  "Montrose",
-  "West University",
-  "Bellaire",
-  "Galleria / Uptown",
-  "The Heights",
-  "Memorial",
-  "Katy",
-  "Sugar Land",
-  "The Woodlands",
-  "Pearland",
-  "Cypress",
-] as const;
+/* Service area (brief: River Oaks, Montrose, West U, Bellaire, Galleria/Uptown, Heights + suburbs) */
+export const SERVICE_AREA =
+  "Serving adults across River Oaks, Montrose, West University, Bellaire, Galleria, Uptown, The Heights, and surrounding Greater Houston communities.";
 
 export const HERO_STATS = [
   { value: 60, suffix: " min", label: "First physician evaluation" },

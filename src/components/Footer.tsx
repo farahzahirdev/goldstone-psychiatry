@@ -3,6 +3,7 @@ import { MailIcon, PhoneIcon, PinIcon } from "@/components/Icons";
 import {
   ADDRESS_LINE_1,
   ADDRESS_LINE_2,
+  SERVICE_AREA,
   EMAIL,
   EMAIL_HREF,
   MAPS_URL,
@@ -58,6 +59,7 @@ export default function Footer() {
                 {ADDRESS_LINE_2}
               </span>
             </a>
+            <p className="mt-3 max-w-xs text-[0.95rem] leading-relaxed text-white/60">{SERVICE_AREA}</p>
           </div>
         </div>
 
