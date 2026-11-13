@@ -1,8 +1,6 @@
-import Image from "next/image";
-import BrainNerves from "@/components/BrainNerves";
 import CountUp from "@/components/CountUp";
 import { ArrowIcon, CheckIcon, PhoneIcon, StarIcon } from "@/components/Icons";
-import { FORM_SECTION_ID, IMAGES, PHONE_DISPLAY, PHONE_HREF } from "@/lib/constants";
+import { FORM_SECTION_ID, PHONE_DISPLAY, PHONE_HREF } from "@/lib/constants";
 
 const LINE_1 = "Depression that hasn't".split(" ");
 const LINE_2 = "responded to medication?".split(" ");
@@ -41,12 +39,6 @@ export default function Hero() {
   return (
     <section id="top" className="hero">
       <HeroBackdrop />
-
-      {/* Glowing brain, anchored to the far right edge (desktop) */}
-      <div className="hero-brain" aria-hidden>
-        <Image src={IMAGES.brain} alt="" fill priority quality={90} sizes="(min-width: 1024px) 45vw, 90vw" className="object-cover object-left" />
-        <BrainNerves />
-      </div>
 
       <div className="container-main relative grid items-center gap-12 pb-20 pt-12 sm:pb-24 sm:pt-16 lg:min-h-[clamp(700px,calc(100svh-148px),860px)] lg:grid-cols-[1.2fr_0.8fr] lg:gap-10 lg:pb-28 lg:pt-20">
         {/* Left: message (centred on mobile/tablet, left-aligned on desktop) */}
@@ -123,7 +115,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right: TMS inquiry card (frosted glass over the brain image) */}
+        {/* Right: TMS inquiry card */}
         <div className="relative lg:pl-6">
           <div className="hero-fade elig-card mx-auto max-w-md p-7 sm:p-9" style={{ animationDelay: "0.55s" }}>
             <p className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-gold-deep">TMS inquiry</p>

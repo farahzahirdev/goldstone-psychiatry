@@ -81,10 +81,6 @@ export const WHO_IT_HELPS = [
     title: "OCD",
     body: "Intrusive thoughts and compulsions that have not eased with standard care.",
   },
-  {
-    title: "Medication side effects",
-    body: "Weight gain, fatigue, or emotional numbness that made medication hard to stay on.",
-  },
 ] as const;
 
 export const WHY_ITEMS = [
@@ -116,7 +112,7 @@ export const WHY_ITEMS = [
   {
     icon: "layers",
     title: "Options beyond TMS",
-    body: "If TMS is not the right fit, Spravato® and ketamine options can be part of your care pathway.",
+    body: "If TMS is not the right fit, Spravato® can be part of your care pathway.",
   },
 ] as const;
 
@@ -188,7 +184,7 @@ export const FAQ_ITEMS = [
   {
     question: "What if TMS is not the right fit for me?",
     answer:
-      "Your evaluation looks at your whole picture. If TMS is not the best option, we can discuss Spravato®, ketamine, or other psychiatric care.",
+      "Your evaluation looks at your whole picture. If TMS is not the best option, we can discuss Spravato® or other psychiatric care.",
   },
   {
     question: "Do you offer TMS by telehealth?",
