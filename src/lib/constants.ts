@@ -121,7 +121,6 @@ export const INSURANCE_CARRIERS = [
   "Blue Cross Blue Shield",
   "Aetna",
   "Cigna",
-  "Carelon Behavioral Health",
   "Curative",
   "TriWest Healthcare Alliance",
   "Meritain Health",
